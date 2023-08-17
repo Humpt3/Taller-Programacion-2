@@ -41,5 +41,42 @@ namespace Proyecto2._0
                 return;
             }
         }
+
+        private void TApellido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TApellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solamente se pueden letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void TNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solamente se pueden letras", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void BEliminar_Click(object sender, EventArgs e)
+        {
+            TDni.Clear();
+            TApellido.Clear();
+            TNombre.Clear();
+        }
+
+        private void BGuardar_Click(object sender, EventArgs e)
+        {
+                LModificar.ForeColor = Color.Black;
+        }
     }
 }

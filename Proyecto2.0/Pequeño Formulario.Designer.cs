@@ -103,6 +103,8 @@
             this.TApellido.Name = "TApellido";
             this.TApellido.Size = new System.Drawing.Size(100, 20);
             this.TApellido.TabIndex = 6;
+            this.TApellido.TextChanged += new System.EventHandler(this.TApellido_TextChanged);
+            this.TApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TApellido_KeyPress);
             // 
             // TNombre
             // 
@@ -110,6 +112,7 @@
             this.TNombre.Name = "TNombre";
             this.TNombre.Size = new System.Drawing.Size(100, 20);
             this.TNombre.TabIndex = 7;
+            this.TNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TNombre_KeyPress);
             // 
             // BGuardar
             // 
@@ -119,6 +122,7 @@
             this.BGuardar.TabIndex = 8;
             this.BGuardar.Text = "Guardar";
             this.BGuardar.UseVisualStyleBackColor = true;
+            this.BGuardar.Click += new System.EventHandler(this.BGuardar_Click);
             // 
             // BEliminar
             // 
@@ -128,6 +132,7 @@
             this.BEliminar.TabIndex = 9;
             this.BEliminar.Text = "Eliminar";
             this.BEliminar.UseVisualStyleBackColor = true;
+            this.BEliminar.Click += new System.EventHandler(this.BEliminar_Click);
             // 
             // Form1
             // 
