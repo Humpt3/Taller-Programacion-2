@@ -69,14 +69,42 @@ namespace Proyecto2._0
 
         private void BEliminar_Click(object sender, EventArgs e)
         {
-            TDni.Clear();
-            TApellido.Clear();
-            TNombre.Clear();
+            DialogResult ask = MessageBox.Show("Está a punto de eliminar el cliente:" + TNombre.Text + " " + TApellido.Text + '"', "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
+            
+            if(ask == DialogResult.Yes)
+            {
+                TDni.Clear();
+                TApellido.Clear();
+                TNombre.Clear();
+
+                LModificar.ForeColor = Color.Red;
+            }
+        
         }
 
         private void BGuardar_Click(object sender, EventArgs e)
         {
+
+            
+
+
+            if (string.IsNullOrWhiteSpace(TApellido.Text) || string.IsNullOrWhiteSpace(TDni.Text) || string.IsNullOrWhiteSpace(TNombre.Text))
+            {
+                MessageBox.Show("Debe completar todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+             
+            }
+            else
+            {
                 LModificar.ForeColor = Color.Black;
+
+                // la variable tipo dialogResult devuelve true or false
+                DialogResult ask = MessageBox.Show("Seguro que desea insertar un nuevo Cliente?", "Confirmar Inserción", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
+
+                if(ask == DialogResult.Yes) {
+                    MessageBox.Show("El cliente: " + TNombre.Text + " " + TApellido.Text + " " + "se insertó correctamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+            }
         }
     }
 }
