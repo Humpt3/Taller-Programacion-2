@@ -1,0 +1,11 @@
+C:\Users\Usuario\source\repos\Proyecto3.0\bin\Debug\Proyecto3.0.exe.config
+C:\Users\Usuario\source\repos\Proyecto3.0\bin\Debug\Proyecto3.0.exe
+C:\Users\Usuario\source\repos\Proyecto3.0\bin\Debug\Proyecto3.0.pdb
+C:\Users\Usuario\source\repos\Proyecto3.0\obj\Debug\Proyecto3.0.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\Proyecto3.0\obj\Debug\Proyecto3._0.MDIParent1.resources
+C:\Users\Usuario\source\repos\Proyecto3.0\obj\Debug\Proyecto3.Form1.resources
+C:\Users\Usuario\source\repos\Proyecto3.0\obj\Debug\Proyecto3._0.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Proyecto3.0\obj\Debug\Proyecto3.0.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Proyecto3.0\obj\Debug\Proyecto3.0.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Proyecto3.0\obj\Debug\Proyecto3.0.exe
+C:\Users\Usuario\source\repos\Proyecto3.0\obj\Debug\Proyecto3.0.pdb
